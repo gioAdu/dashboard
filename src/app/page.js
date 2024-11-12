@@ -8,10 +8,7 @@ export const metadata = {
 export default function Page() {
   return (
     <main>
-      <div>testing</div>
-      <Link href="/about">About</Link>
-      <Link style={{display:'block'}} href="/blog/1">BLOG</Link>
-
+      <div>START</div>
     </main>
   );
 }

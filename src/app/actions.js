@@ -1,11 +1,12 @@
 'use server'
 
-import { revalidatePath, revalidateTag } from 'next/cache'
+import {  revalidateTag } from 'next/cache'
 
 export async function getTime(productId) {
-  //revalidatePath('/')
-  revalidateTag('time')
+ // revalidateTag('time')
 
+ console.log(productId);
+ 
   try {
     const jsonData = await fetch(`https://dummyjson.com/products/${productId}`)
     const data = await jsonData.json()
